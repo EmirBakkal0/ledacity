@@ -1,86 +1,193 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ledacity</title>
 
-    <link href="output.css" rel="stylesheet">
-</head>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
+    <div class="">
+      <nav
+        class="block w-full max-w-screen-lg px-4 py-2 mx-auto text-white bg-white shadow-md rounded-md lg:px-8 lg:py-3"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
+        >
+          <a href="#" class="mr-4 block cursor-pointer">
+            <img src="assets/logo.jpg" height="60" width="160" alt="Ledacity" />
+          </a>
 
-    <div class=" ">
+          <a href="#"> Bize Ulaşın </a>
+        </div>
+      </nav>
 
-
-        <nav
-            class="block w-full max-w-screen-lg px-4 py-2 mx-auto text-white bg-white shadow-md rounded-md lg:px-8 lg:py-3">
-            <div class="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
-
-                <a href="#" class="mr-4 block cursor-pointer ">
-                    <img src="assets/logo.jpg" height="60" width="160" alt="Ledacity">
-
-                </a>
-
-                <a href="#">
-                    Bize Ulaşın
-                </a>
-            </div>
-        </nav>
-
-        <main>
-            <div class="relative pt-16 pb-32 flex content-center items-center justify-center " style="min-height: 75vh;">
-                <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                  style='background-image: url("assets/6.jpg");'>
-                  <span id="blackOverlay" class="w-full h-full absolute opacity-55 bg-black"> </span>
-                </div>
-                <div class="container relative mx-auto">
-                  <div class="items-center flex flex-wrap">
-                    <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                      <div class="pr-12">
-                        <h1 class="text-white font-semibold text-5xl">
-                          Ledacity Konutları
-                        </h1>
-                        <p class="mt-12 text-lg text-gray-300">
-                            İzmit Kabaoğlu Mahallesi'nde yükselen bir değerdir. Toplamda 32 adet 3+1 dubleks daireden oluşmaktadır. Dairelerimiz her blokta 2 adet bahçe dubleks  2 adet çatı dubleks olacak şekilde 4 dubleks’den oluşur.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-                  style="height: 70px;">
-                  <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
-                  </svg>
+      <main>
+        <div
+          class="relative pt-16 pb-32 flex content-center items-center justify-center"
+          style="min-height: 75vh"
+        >
+          <div
+            class="absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image: url('assets/6.jpg')"
+          >
+            <span
+              id="blackOverlay"
+              class="w-full h-full absolute opacity-55 bg-black"
+            >
+            </span>
+          </div>
+          <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+              <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                <div class="">
+                  <h1 class="text-white font-semibold text-5xl">
+                    Ledacity Konutları
+                  </h1>
+                  <p class="mt-12 text-lg text-gray-300">
+                    İzmit Kabaoğlu Mahallesi'nde yükselen bir değerdir. Toplamda
+                    32 adet 3+1 dubleks daireden oluşmaktadır. Dairelerimiz her
+                    blokta 2 adet bahçe dubleks 2 adet çatı dubleks olacak
+                    şekilde 4 dubleks’den oluşur.
+                  </p>
                 </div>
               </div>
-        </main>
-
-
-        <section class="  bg-gray-300">
-            <div class="container mx-auto grid grid-cols-2 items-center w-full -mt-24">
-                <div class="px-7 text-center font-sans">
-                    <p >
-                        LEDACİTY içinde 8 blok bulunmaktadır. Ayrıca açık havuz, kapalı otopark, asansör ,sosyal tesis, kamelya ve dinlenme alanları, güvenlik ve elektrikli araç şarj istasyonu altyapısı da projenin özellikleri arasındadır.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="assets/5.jpg" alt="Manzara">
-                </div>
             </div>
+          </div>
+          <div
+            class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+            style="height: 70px"
+          >
+            <svg
+              class="absolute bottom-0 overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              y="0"
+            >
+              <polygon
+                class="text-gray-300 fill-current"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
+          </div>
+        </div>
+      </main>
 
-        </section>
+      <section class="bg-gray-300 relative">
+        <div
+          class="flex flex-1 flex-col lg:flex-row items-center container mx-auto"
+        >
+          <div class="px-7 font-sans flex-1 pt-10 text-center text-lg">
+            LEDACİTY içinde 8 blok bulunmaktadır. Ayrıca açık havuz, kapalı
+            otopark, asansör ,sosyal tesis, kamelya ve dinlenme alanları,
+            güvenlik ve elektrikli araç şarj istasyonu altyapısı da projenin
+            özellikleri arasındadır.
+          </div>
 
+          <div class="flex-1 p-2 lg:p-10">
+            <img src="assets/5.jpg" alt="Manzara" />
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <section class="relative">
+      <div class="flex flex-col lg:flex-row items-center container mx-auto">
+        <div class="px-7 font-sans flex-1 pt-10 text-center text-lg">
+          LEDACİTY Mükemmel bir yere konumlanarak benzersiz bir deneyim sunuyor.
+          Modern tasarım ve işlevsellikle dikkat çeken bu site, tarzında fark
+          yaratıyor ferah bir ortamda önü kapanmayacak müthiş bir manzara
+          sizleri bekliyor.
+        </div>
+
+        <div class="flex-1 p-2 lg:p-10">
+          <img src="assets/6.jpg" alt="" />
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-200 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative bg-gray-200">
+      <div class="flex flex-col lg:flex-row items-center container mx-auto">
+        <div class="px-7 font-sans flex-1 pt-10 text-center text-lg">
+          Bahçe dublexlerde özel bahçe alanları bulunmaktadır, bu da villa
+          konforunda yeşil bir yaşam sunmaktadır.
+        </div>
+        <div class="flex-1 p-2 lg:p-10">
+          <img src="assets/3.jpg" alt="" />
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-black fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div>
 
 
     </div>
 
     <script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
     <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
-</body>
-
+    
+  </body>
 </html>
