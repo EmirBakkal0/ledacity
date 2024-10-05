@@ -6,92 +6,55 @@
     <title>Ledacity</title>
 
     <link href="output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel/splide.min.css" />
   </head>
 
   <body>
-    <div class="">
-      <nav
-        class="block w-full max-w-screen-lg px-4 py-2 mx-auto text-white bg-white shadow-md rounded-md lg:px-8 lg:py-3"
+    <nav
+      class="w-full px-8 py-2 mx-auto text-white bg-white shadow-md rounded-md lg:px-20 lg:py-3 sticky top-0 z-10"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
+      >
+        <a href="#" class="mr-4 block cursor-pointer">
+          <img src="assets/logo.jpg" height="60" width="160" alt="Ledacity" />
+        </a>
+
+        <a href="#footer" class="font-bold border-gray-100 shadow-sm rounded-xl p-2 "> Bize Ulaşın </a>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh"
       >
         <div
-          class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="background-image: url('assets/6.jpg')"
         >
-          <a href="#" class="mr-4 block cursor-pointer">
-            <img src="assets/logo.jpg" height="60" width="160" alt="Ledacity" />
-          </a>
-
-          <a href="#"> Bize Ulaşın </a>
-        </div>
-      </nav>
-
-      <main>
-        <div
-          class="relative pt-16 pb-32 flex content-center items-center justify-center"
-          style="min-height: 75vh"
-        >
-          <div
-            class="absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image: url('assets/6.jpg')"
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-55 bg-black"
           >
-            <span
-              id="blackOverlay"
-              class="w-full h-full absolute opacity-55 bg-black"
-            >
-            </span>
-          </div>
-          <div class="container relative mx-auto">
-            <div class="items-center flex flex-wrap">
-              <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div class="">
-                  <h1 class="text-white font-semibold text-5xl">
-                    Ledacity Konutları
-                  </h1>
-                  <p class="mt-12 text-lg text-gray-300">
-                    İzmit Kabaoğlu Mahallesi'nde yükselen bir değerdir. Toplamda
-                    32 adet 3+1 dubleks daireden oluşmaktadır. Dairelerimiz her
-                    blokta 2 adet bahçe dubleks 2 adet çatı dubleks olacak
-                    şekilde 4 dubleks’den oluşur.
-                  </p>
-                </div>
+          </span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="">
+                <h1 class="text-white font-semibold text-3xl lg:text-5xl">
+                  LEDACITY Konutları
+                </h1>
+                <p class="mt-12 text-base px-2 lg:text-xl  text-gray-200 font-normal" >
+                  İzmit Kabaoğlu Mahallesi'nde yükselen bir değerdir. Toplamda
+                  32 adet 3+1 dubleks daireden oluşmaktadır. Dairelerimiz her
+                  blokta 2 adet bahçe dubleks 2 adet çatı dubleks olacak şekilde
+                  4 dubleks’den oluşur.
+                </p>
               </div>
             </div>
-          </div>
-          <div
-            class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style="height: 70px"
-          >
-            <svg
-              class="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                class="text-gray-300 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-        </div>
-      </main>
-
-      <section class="bg-gray-300 relative">
-        <div
-          class="flex flex-1 flex-col lg:flex-row items-center container mx-auto"
-        >
-          <div class="px-7 font-sans flex-1 pt-10 text-center text-lg">
-            LEDACİTY içinde 8 blok bulunmaktadır. Ayrıca açık havuz, kapalı
-            otopark, asansör ,sosyal tesis, kamelya ve dinlenme alanları,
-            güvenlik ve elektrikli araç şarj istasyonu altyapısı da projenin
-            özellikleri arasındadır.
-          </div>
-
-          <div class="flex-1 p-2 lg:p-10">
-            <img src="assets/5.jpg" alt="Manzara" />
           </div>
         </div>
         <div
@@ -108,13 +71,49 @@
             y="0"
           >
             <polygon
-              class="text-white fill-current"
+              class="text-gray-300 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
-      </section>
-    </div>
+      </div>
+    </main>
+
+    <section class="bg-gray-300 relative">
+      <div
+        class="flex flex-1 flex-col lg:flex-row items-center container mx-auto"
+      >
+        <div class="px-7 font-sans flex-1 pt-10 text-center text-lg">
+          LEDACİTY içinde 8 blok bulunmaktadır. Ayrıca açık havuz, kapalı
+          otopark, asansör, sosyal tesis, kamelya ve dinlenme alanları, güvenlik
+          ve elektrikli araç şarj istasyonu altyapısı da projenin özellikleri
+          arasındadır.
+        </div>
+
+        <div class="flex-1 p-2 lg:p-10">
+          <img src="assets/5.jpg" alt="Manzara" />
+        </div>
+      </div>
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </section>
 
     <section class="relative">
       <div class="flex flex-col lg:flex-row items-center container mx-auto">
@@ -173,7 +172,7 @@
             y="0"
           >
             <polygon
-              class="text-black fill-current"
+              class="text-white fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
@@ -181,13 +180,206 @@
       </div>
     </section>
 
-    <div>
+    <div class="flex flex-col items-center relative">
+        <div class="container mx-auto " >
+          <iframe class="w-svw lg:max-w-screen-lg mx-auto p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.264515832183!2d29.97202689772861!3d40.7342047404604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb453f9c029e7b%3A0x1e08e2d28602d078!2zTEVEQSBNw7xoZW5kaXNsaWsgRMSxxZ8gVGljIEx0ZA!5e0!3m2!1str!2str!4v1728131872976!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
+      <p class="p-4  text-base lg:text-lg text-center">
+        LEDACİTY, Kocaeli Üniversitesi'ne 1,5 km, şehir merkezine 4 km, İzmit
+        Otogar ve Yahya Kaptan'a 5 km, şehir hastanesine 2 km mesafededir.
+      </p>
 
+      <section
+        id="image-carousel-1"
+        class="splide max-w-screen-lg mb-5"
+        aria-label="Dışarı fotoğraflar"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/1.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/2.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/3.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/4.jpg" alt="" />
+            </li>
+            <!-- <li class="splide__slide">
+              <img src="assets/5.jpg" alt="" />
+            </li> -->
+
+            <li class="splide__slide">
+              <img src="assets/6.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="image-carousel-2"
+        class="splide max-w-screen-lg mb-5"
+        aria-label="İç mimari fotoğrafları"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/interior/banyo 1.jpg" alt="Banyo 1" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/banyo 2.jpg" alt="Banyo 2" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/banyo 3.jpg" alt="Banyo 3" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/çocuk odası 1.jpg" alt="çocuk odası" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/çocuk odası 2.jpg" alt="çocuk odası" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/çocuk odası 3.jpg" alt="çocuk odası" />
+            </li>
+
+            <li class="splide__slide">
+              <img src="assets/interior/koridor 1.jpg" alt="koridor" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/mutfak 1.jpg" alt="mutfak" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/mutfak 2.jpg" alt="mutfak" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/salon 1.jpg" alt="salon" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/salon 2.jpg" alt="salon" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/salon 3.jpg" alt="salon" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/salon 4.jpg" alt="salon" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/yatak odası 1.jpg" alt="yatak odası" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/interior/yatak odası 2.jpg" alt="yatak odası" />
+            </li>
+            
+            <li class="splide__slide">
+              <img src="assets/interior/zbalkon.jpg" alt="balkon" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="image-carousel-3"
+        class="splide max-w-screen-lg mb-7"
+        aria-label="Kat planları"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/kat planları/1.normal kat.jpg" alt="1. kat planı" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/kat planları/bahçe kat.jpg" alt="bahçe kat planı" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/kat planları/zemin kat.jpg" alt="zemin kat planı" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/kat planları/çatı kat.jpg" alt="çatı kat planı" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <p class="mb-20 mt-8 text-base lg:text-lg text-center" >
+        LEDA YAPI’nın bu nadide projesinde sizlerde yerinizi ayırtmayı unutmayın!
+      </p>
+
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-black fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
     </div>
 
-    <script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
-    <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
-    
+    <footer class="bg-black" id="footer">
+      <div class="container grid md:grid-cols-2 mx-auto  text-white px-4 py-8 ">
+
+        <div class="my-5">
+
+          <h3 class="font-bold">İLETİŞİM BİLGİLERİ:</h3>
+          <ul class="text-gray-400">
+            <li class="flex flex-row"><img src="assets/icons/phone-calling-svgrepo-com.svg" alt="phone icon" width="15px" class="mr-1"> <span> +90 262 332 18 17</span></li>
+            
+            <li class="flex flex-row"><img src="assets/icons/mail-svgrepo-com.svg" alt="mail icon" width="15px" class="mr-2">
+              <span>
+              info@ledaeng.com
+            </span>
+          </li>
+          </ul>
+          
+        </div>
+        <div class="my-5">
+          <h3 class="font-bold">ADRES:</h3>
+          
+
+            
+            <ul class="text-gray-400 ">
+              <li class="flex flex-row"> <img src="assets/icons/address-svgrepo-com.svg" alt="address icon" width="15px" class="mr-2"> <span>
+  
+                Yaylacık Mah Kanalyolu Cad. No: 79 Başiskele / Kocaeli
+                
+              </span>
+            </li>
+            </ul>
+          
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="carousel/splide.min.js"></script>
+    <script>
+      const elms = document.getElementsByClassName("splide");
+
+      for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+          // heightRatio: 0.5625,
+          // perPage:2,
+          // breakpoints:{
+          //   640:{
+          //     perPage:1,
+          //   }
+          // }
+        }).mount();
+      }
+    </script>
   </body>
 </html>
