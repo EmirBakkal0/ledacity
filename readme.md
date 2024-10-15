@@ -1,3 +1,2 @@
 LIVE LINK: http://ledacity.com
-
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/487a7324-72c4-4ede-8af2-9ad0cdee490c)
